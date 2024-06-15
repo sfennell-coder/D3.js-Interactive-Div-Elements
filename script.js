@@ -15,4 +15,15 @@ function main(){
         .enter()
         .append('rect')
 
+        .on("mouseover", function(){
+            d3.select(this)
+            .style("background-color", "firebrick")
+            .style("border", "2px solid green")
+        })
+        .on("mouseout", function(){
+            d3.select(this)
+            .style("background-color", "green")
+            .style("border", "2px solid firebrick")
+        })
+
 }
